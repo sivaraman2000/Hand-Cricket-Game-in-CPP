@@ -48,6 +48,8 @@ int play_game(int computer_score){
     return your_score;
 }
 int main() {
+    // srand() function should only be seeded once
+    // This should not be repeatedly seeded or reseeded everytime you wish to generate a new batch of pseudo-random numbers
     srand(time(0));
     int computer_score;
     // Generate a Random Number from 1 to 25 for Computer Score
